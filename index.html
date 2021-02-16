@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My BookList</title>
+    <link rel="stylesheet" href="Font-awesome/fontawesome-free-5.13.1-web/css/all.css">
+    <link rel="stylesheet" href="bootstap/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-4 text-center">
+            <i class="fas fa-book-open text-info mt-4"></i>
+            My <span class="text-info">Book</span>List</h1>
+        <form id="book-form">
+            <div class="form-group">
+                <label for="Title">Title</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="Author">Author</label>
+                <input type="text" id="author" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="Isbn">ISBN#</label>
+                <input type="text" id="isbn" class="form-control">
+            </div>
+            <input type="submit" value="Add book" class="btn btn-info btn-block">
+        </form>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN#</th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+    <link rel="stylesheet" href="bootstap/bootstrap.min.js">
+    <script src="index.js"></script>
+</body>
+
+</html>
